@@ -1,1 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    /* Fonte */
+    --font-Inter: "Inter", sans-serif;
+    /* Cores Semânticas */
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-danger: #DC2626;
+    /* Cores Interface Tema Claro */
+    --color-background-light: #EBEBEB;
+    --color-surface-light: #FFFFFF;
+    --color-surface-alt-light: #F0F0F0;
+    --color-border-light: #D4D4D4;
+    /* Cores Interface Tema Escurto */
+    --color-background-dark: #181818;
+    --color-surface-dark: #232323;
+    --color-surface-alt-dark: #2D2D2D;
+    --color-border-dark: #3A3A3A;
+    /* Cores Texto Tema Claro */
+    --color-text-primary-light: #171717;
+    --color-text-secondary-light: #525252;
+    --color-text-muted-light: #737373;
+    /* Cores Texto Tema Escuro */
+    --color-text-primary-dark: #F5F5F5;
+    --color-text-secondary-dark: #B0B0B0;
+    --color-text-muted-dark: #808080;
+}

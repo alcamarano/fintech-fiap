@@ -1,0 +1,42 @@
+html {
+    letter-spacing: .6px;
+}
+
+header {
+    width: 400px;
+}
+
+main {
+    width: 400px;
+    border-radius: 20px;
+}
+
+input {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+input, button {
+    border-radius: 8px;
+    outline: none;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+p, a {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
