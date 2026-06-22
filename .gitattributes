@@ -1,2 +1,3 @@
-*.html linguist-detectable=true
-*.css linguist-detectable=true
+dist/*.html linguist-detectable=true
+dist/*.html linguist-generated=false
+dist/*.css linguist-generated=false
