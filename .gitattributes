@@ -1,3 +1,4 @@
 dist/** linguist-generated=false
-dist/*.html linguist-detectable=true
-*.html linguist-detectable=true
+dist/**/*.html linguist-language=HTML
+dist/*.html linguist-language=HTML
+*.html linguist-language=HTML
