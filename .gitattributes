@@ -1,4 +1,0 @@
-dist/** linguist-generated=false
-dist/**/*.html linguist-language=HTML
-dist/*.html linguist-language=HTML
-*.html linguist-language=HTML
