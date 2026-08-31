@@ -1,1 +1,18 @@
 /* Estilização do Dashboard (dashboard.html) */
+
+.main__dashboard-item-srd {
+    width: 340px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main__dashboard-item-srd p:nth-child(2) {
+    font-size: var(--text-title);
+}
+
+.main__dashboard-item-srd p:nth-child(3) {
+    font-size: var(--text-tiny);
+}

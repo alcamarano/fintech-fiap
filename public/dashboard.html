@@ -124,9 +124,36 @@
                     </button>
                 </div>
             </header>
+            <div class="p-5 flex flex-col gap-5">
+                <div class="flex gap-5">
+                    <div class="main__dashboard-item-srd bg-brand">
+                        <h4 class="text-text-secondary-dark">Saldo atual</h4>
+                        <p class="text-text-primary-dark">R$ 8.420,50</p>
+                        <p class="text-text-secondary-dark">+12,4% vs. maio</p>
+                    </div>
+                    <div class="main__dashboard-item-srd bg-surface-light dark:bg-surface-dark">
+                        <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Receitas do mês</h4>
+                        <p class="text-text-primary-light dark:text-text-primary-dark">R$ 12.800,00</p>
+                        <p class="text-text-secondary-light dark:text-text-secondary-dark">+5,2% vs. maio</p>
+                    </div>
+                    <div class="main__dashboard-item-srd bg-surface-light dark:bg-surface-dark">
+                        <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Despesas do mês</h4>
+                        <p class="text-text-primary-light dark:text-text-primary-dark">R$ 7.140,30</p>
+                        <p class="text-text-secondary-light dark:text-text-secondary-dark">-3,1% vs. maio</p>
+                    </div>
+                </div>
+                <div class="w-265 h-100 relative p-5 rounded-lg bg-surface-light dark:bg-surface-dark">
+                    <h4 class="text-text-primary-light dark:text-text-primary-dark text-center">Fluxo de Caixa - últimos 12 meses</h4>
+                    <div class="size-full relative">
+                        <canvas id="canvasCashFlowChart"></canvas>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             
         </footer>
+        <script src="../node_modules/chart.js/dist/chart.umd.min.js"></script>
+        <script src="js/charts.js"></script>
     </body>
 </html>
