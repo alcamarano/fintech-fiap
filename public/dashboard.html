@@ -99,7 +99,7 @@
                 </figure>
             </div>
         </header>
-        <main class="w-full h-full pl-64 bg-background-light dark:bg-background-dark">
+        <main class="w-full h-dvh pl-64 bg-background-light dark:bg-background-dark">
             <header class="w-full border-b border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark flex justify-between">
                 <div class="h-20 pl-5 flex flex-col justify-center">
                     <h3 class="text-text-primary-light dark:text-text-primary-dark">Visão geral</h3>
@@ -124,28 +124,72 @@
                     </button>
                 </div>
             </header>
-            <div class="p-5 flex flex-col gap-5">
-                <div class="flex gap-5">
-                    <div class="main__dashboard-item-srd bg-brand">
-                        <h4 class="text-text-secondary-dark">Saldo atual</h4>
-                        <p class="text-text-primary-dark">R$ 8.420,50</p>
-                        <p class="text-text-secondary-dark">+12,4% vs. maio</p>
+            <div class="p-5 flex gap-5">
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-5">
+                        <div class="main__dashboard-item-srd bg-brand">
+                            <h4 class="text-text-secondary-dark">Saldo atual</h4>
+                            <p class="text-text-primary-dark">R$ 8.420,50</p>
+                            <p class="text-text-secondary-dark">+12,4% vs. maio</p>
+                        </div>
+                        <div class="main__dashboard-item-srd bg-surface-light dark:bg-surface-dark">
+                            <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Receitas do mês</h4>
+                            <p class="text-text-primary-light dark:text-text-primary-dark">R$ 12.800,00</p>
+                            <p class="text-text-secondary-light dark:text-text-secondary-dark">+5,2% vs. maio</p>
+                        </div>
+                        <div class="main__dashboard-item-srd bg-surface-light dark:bg-surface-dark">
+                            <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Despesas do mês</h4>
+                            <p class="text-text-primary-light dark:text-text-primary-dark">R$ 7.140,30</p>
+                            <p class="text-text-secondary-light dark:text-text-secondary-dark">-3,1% vs. maio</p>
+                        </div>
                     </div>
-                    <div class="main__dashboard-item-srd bg-surface-light dark:bg-surface-dark">
-                        <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Receitas do mês</h4>
-                        <p class="text-text-primary-light dark:text-text-primary-dark">R$ 12.800,00</p>
-                        <p class="text-text-secondary-light dark:text-text-secondary-dark">+5,2% vs. maio</p>
-                    </div>
-                    <div class="main__dashboard-item-srd bg-surface-light dark:bg-surface-dark">
-                        <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Despesas do mês</h4>
-                        <p class="text-text-primary-light dark:text-text-primary-dark">R$ 7.140,30</p>
-                        <p class="text-text-secondary-light dark:text-text-secondary-dark">-3,1% vs. maio</p>
+                    <div class="w-265 h-105 relative p-5 rounded-lg bg-surface-light dark:bg-surface-dark">
+                        <h4 class="text-text-primary-light dark:text-text-primary-dark text-center">Fluxo de Caixa - últimos 12 meses</h4>
+                        <div class="w-255 h-85 mt-5 relative">
+                            <canvas id="canvasCashFlowChart"></canvas>
+                        </div>
                     </div>
                 </div>
-                <div class="w-265 h-100 relative p-5 rounded-lg bg-surface-light dark:bg-surface-dark">
-                    <h4 class="text-text-primary-light dark:text-text-primary-dark text-center">Fluxo de Caixa - últimos 12 meses</h4>
-                    <div class="size-full relative">
-                        <canvas id="canvasCashFlowChart"></canvas>
+                <div class="w-full max-h-dvh p-5 rounded-lg flex flex-col gap-3 bg-surface-light dark:bg-surface-dark">
+                    <div class="flex justify-between">
+                        <h4 class="text-text-secondary-light dark:text-text-secondary-dark">Últimos lançamentos</h4>
+                        <a href="releases.html" class="flex items-center text-text-secondary-light dark:text-text-secondary-dark text-caption">
+                            Ver todos<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right text-text-secondary-light dark:text-text-secondary-dark"><path d="m9 18 6-6-6-6"/></svg>
+                        </a>
+                    </div>
+                    <div class="w-full h-px rounded-lg opacity-50 bg-border-light dark:bg-border-light"></div>
+                    <div class="flex flex-col gap-2">
+
+                        <div class="main__dashboard-item-releases bg-background-light dark:bg-background-dark">
+                            <div class="main__dashboard-item-releases-title">
+                                <figure class="bg-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet-minimal"><path d="M17 14h.01"/><path d="M7 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14"/></svg>
+                                </figure>
+                                <div>
+                                    <h5 class="text-text-primary-light dark:text-text-primary-dark">Salário</h5>
+                                    <p class="text-text-muted-light dark:text-text-muted-dark text-tiny">Conta Itaú</p>
+                                </div>
+                            </div>
+                            <p class="text-text-primary-light dark:text-text-primary-dark text-caption">15 Jun</p>
+                            <p class="main__dashboard-item-releases-category bg-success">Principal</p>
+                            <p class="text-success text-caption">+ R$ 9.500,00</p>
+                        </div>
+
+                        <div class="main__dashboard-item-releases bg-background-light dark:bg-background-dark">
+                            <div class="main__dashboard-item-releases-title">
+                                <figure class="bg-brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                </figure>
+                                <div>
+                                    <h5 class="text-text-primary-light dark:text-text-primary-dark">Aluguel</h5>
+                                    <p class="text-text-muted-light dark:text-text-muted-dark text-tiny">Conta Itaú</p>
+                                </div>
+                            </div>
+                            <p class="text-text-primary-light dark:text-text-primary-dark text-caption">15 Jun</p>
+                            <p class="main__dashboard-item-releases-category bg-brand">Moradia</p>
+                            <p class="text-danger text-caption">- R$ 1.500,00</p>
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -16,3 +16,35 @@
 .main__dashboard-item-srd p:nth-child(3) {
     font-size: var(--text-tiny);
 }
+
+.main__dashboard-item-releases {
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__dashboard-item-releases-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main__dashboard-item-releases-title figure {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__dashboard-item-releases-category {
+    padding: 2px 12px;
+    border-radius: 8px;
+    color: var(--color-text-primary-dark);
+    font-size: var(--text-caption);
+}
