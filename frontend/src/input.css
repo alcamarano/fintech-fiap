@@ -3,6 +3,33 @@
 @theme {
     /* Fonte */
     --font-inter: 'Inter', sans-serif;
+    /* Tamanhos de Fonte */
+    --text-display: 28px;
+    --text-heading: 22px;
+    --text-title: 20px;
+    --text-body: 18px;
+    --text-body-small: 16px;
+    --text-caption: 14px;
+    --text-tiny: 12px;
+    /* Cores */
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-danger: #DC2626;
+    --color-brand: #4338CA;
+    /* Cores Tema Claro */
+    --color-background-light: #EBEBEB;
+    --color-surface-light: #FFF;
+    --color-border-light: #D4D4D4;
+    --color-text-primary-light: #171717;
+    --color-text-secondary-light: #525252;
+    --color-text-muted-light: #737373;
+    /* Cores Tema Escuro */
+    --color-background-dark: #181818;
+    --color-surface-dark: #232323;
+    --color-border-dark: #3A3A3A;
+    --color-text-primary-dark: #F5F5F5;
+    --color-text-secondary-dark: #B0B0B0;
+    --color-text-muted-dark: #808080;
 }
 
 @layer base {
@@ -12,6 +39,6 @@
         font-style: normal;
         font-weight: 100 900;
         font-display: swap;
-        src: url('../assets/font/Inter-Variable.ttf') format('truetype');
+        src: url('/frontend/assets/font/Inter-Variable.ttf') format('truetype');
     }
 }

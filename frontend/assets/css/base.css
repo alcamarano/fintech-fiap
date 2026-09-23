@@ -1,0 +1,27 @@
+/* Estilização base para todas as páginas */
+html {
+    font-family: var(--font-inter);
+    letter-spacing: .8px;
+    user-select: none;
+}
+
+h1 {
+    font-size: var(--text-display);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    font-size: var(--text-heading);
+    font-weight: 600;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="font-inter">
+<html lang="pt-br">
     <head>
         <!-- Meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Augusto Lima Camarano | @alcamarano">
+        <meta name="description" content="A Fintech é um aplicativo de controle financeiro pessoal, criado para ajudar pessoas a entenderem para onde vai o próprio dinheiro e a organizarem sua vida financeira de forma simples, sem depender de planilhas complicadas ou de conhecimento prévio em finanças.">
         <!-- CSS -->
          <link rel="stylesheet" href="assets/css/output.css">
+         <link rel="stylesheet" href="assets/css/base.css">
+         <link rel="stylesheet" href="assets/css/login-register.css">
         <!-- Título -->
-        <title>Fintech</title>
+        <title>Fintech | Entrar</title>
     </head>
-    <body>
+    <body class="bg-background-light dark:bg-background-dark">
         <!-- Cabeçalho -->
         <header>
-            
+            <h1 class="text-text-primary-light dark:text-text-primary-dark">
+                <img src="assets/img/Logo.png" alt="Ícone de uma carteira marrom contendo notas de dinheiro e uma moeda com cifrão"> Fintech
+            </h1>
         </header>
         <!-- Principal -->
         <main>
-            
+            <!-- Entrar -->
+            <section id="secLogin" class="bg-surface-light dark:bg-surface-dark main__section">
+                <h2 class="text-text-primary-light dark:text-text-primary-dark main__section-title">Acesse sua conta</h2>
+                <form action="" method="" class="main__section-form">
+                    <div class="section__form-div">
+                        <label for="inpLoginEmail" class="text-text-secondary-light dark:text-text-secondary-dark form__div-label">E-mail</label>
+                        <input type="email" id="inpLoginEmail" name="login_email" required autocomplete="email" class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark form__div-input">
+                    </div>
+                    <div class="section__form-div">
+                        <label for="inpLoginPassword" class="text-text-secondary-light dark:text-text-secondary-dark form__div-label">Senha</label>
+                        <input type="password" id="inpLoginPassword" name="login_password" required autocomplete="current-password" minlength="8" class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark form__div-input">
+                        <button type="button" class="text-text-muted-light dark:text-text-muted-dark form__div-button" title="Redefinir sua senha">Esqueci minha senha</button>
+                    </div>
+                    <button type="submit" class="section__form-button-submit" title="Acessar sua conta">Entrar</button>
+                </form>
+                <p class="text-text-secondary-light dark:text-text-secondary-dark main__section-p">
+                    Ainda não tem uma conta? <button type="button" id="btnLogin" class="section__p-button" title="Criar uma nova conta">Cadastre-se</button>
+                </p>
+            </section>
+            <!-- Cadastrar -->
+            <section id="secRegister" class="bg-surface-light dark:bg-surface-dark main__section" hidden>
+                <h2 class="text-text-primary-light dark:text-text-primary-dark main__section-title">Crie a sua conta</h2>
+                <form action="" method="" class="main__section-form">
+                    <div class="section__form-div">
+                        <label for="inpRegisterName" class="text-text-secondary-light dark:text-text-secondary-dark form__div-label">Nome</label>
+                        <input type="text" id="inpRegisterName" name="register_name" required autocomplete="name" class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark form__div-input">
+                    </div>
+                    <div class="section__form-div">
+                        <label for="inpRegisterDateBirth" class="text-text-secondary-light dark:text-text-secondary-dark form__div-label">Data de nascimento</label>
+                        <input type="date" id="inpRegisterDateBirth" name="register_date_birth" required autocomplete="bday" class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark form__div-input">
+                    </div>
+                    <div class="section__form-div">
+                        <label for="inpRegisterEmail" class="text-text-secondary-light dark:text-text-secondary-dark form__div-label">E-mail</label>
+                        <input type="email" id="inpRegisterEmail" name="register_email" required autocomplete="email" class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark form__div-input">
+                    </div>
+                    <div class="section__form-div">
+                        <label for="inpRegisterPassword" class="text-text-secondary-light dark:text-text-secondary-dark form__div-label">Senha</label>
+                        <input type="password" id="inpRegisterPassword" name="register_password" required autocomplete="new-password" minlength="8" class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-muted-light dark:text-text-muted-dark form__div-input">
+                        <p class="text-text-muted-light dark:text-text-muted-dark form__div-p">Sua senha deve ter no mínimo 8 caracteres</p>
+                    </div>
+                    <button type="submit" class="section__form-button-submit" title="Criar uma nova conta">Cadastrar</button>
+                </form>
+                <p class="text-text-secondary-light dark:text-text-secondary-dark main__section-p">
+                    Já tem uma conta? <button type="button" id="btnRegister" class="section__p-button" title="Acessar sua conta">Entrar</button>
+                </p>
+            </section>
         </main>
         <!-- Rodapé -->
         <footer>
-            
+            <p class="text-text-muted-light dark:text-text-muted-dark footer-p">&copy; <span id="spnYear"></span> Fintech. Todos os direitos reservados.</p>
         </footer>
+        <!-- Scripts -->
+        <script src="assets/js/year.js"></script>
+        <script src="assets/js/auth-form-switcher.js"></script>
     </body>
 </html>
